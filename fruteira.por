@@ -1,47 +1,67 @@
 programa {
   funcao inicio() {
-    //DeclaraÁao de vareaveis
-    real kilos, desconto 
-    real valorMorango, valorMaca, morango, maca, fruta
+    //Declara√ß√£o de vareaveis
+    real valorPago, desconto, valorMorango, valorMaca, morango, maca
 
-    
-
+  
     //Coletando dados
-    escreva("\n              ==== Fruteira =====")
-    escreva("\n \t\t\t\t |  AtÈ 5 Kg       |  Acima de 5 Kg |")
+    escreva("\n =============== Fruteira ==================")
+    escreva("\n         |    At√© 5 Kg     |  Acima de 5 Kg |")
     escreva("\n Morango | R$ 2,50 por Kg  | R$ 2,20 por Kg |")
-    escreva("\n MaÁ„    |  R$ 1,80 por Kg | R$ 1,50 por Kg |")
+    escreva("\n Ma√ß√£    |  R$ 1,80 por Kg | R$ 1,50 por Kg |")
+    escreva("\n ===========================================")
     escreva("\n")
-    escreva("Qual Fruta deseja? morango [1] | MaÁ„ [2] ")
-    leia(fruta)
-    escreva("Quantos kilos de fruta: ")
-    leia(kilos)
 
-  limpa()
-    se (fruta == 1 e kilos >= 8){
-      valorMorango = 2.20
-    valorMorango =  kilos * 2.20
-    desconto = (valorMorango * 0.10) 
-    desconto = valorMorango - desconto
+    escreva("Quantos kilos de Morango vai querer? ")
+    leia(morango)
+   
+    escreva("Quantos kilos de Ma√ß√£ vai querer? ")
+    leia(maca)
 
-    escreva("\nQuantidades de morangos ",kilos,"\t R$: ",valorMorango," Reais","\n valor Pago pelo cliente R$: ", desconto," reais")
-    } senao se (fruta == 2 e kilos >= 8){
-       valorMaca = kilos * 1.50
-    desconto = valorMaca * 0.10
-    escreva("\nQuantidades de maÁ„s ",kilos,"\t R$: ",valorMaca," Reais","\n valor Pago pelo cliente R$: ", desconto," reais")
-    } senao se (fruta == 1 e kilos < 8 e kilos > 5){
-      valorMorango = kilos * 2.20
+    limpa()
+
+  //Calculando valor das frutas
+    se (morango < 5) {
+      valorMorango = morango * 2.50
+    } senao {
+      valorMorango = morango * 2.20
+    }
+    se (maca < 5){
+      valorMaca = maca * 1.80
+    } senao {
+      valorMaca = maca * 1.50
+    }
+
+    //Calculando valor pago
+    valorPago =  valorMorango + valorMaca      
+
+    //Calculando desconto 
+    se (morango + maca > 8 ou valorMorango + valorMaca > 25){
+      desconto = valorPago * 0.10
+      valorPago = valorPago - desconto
+    } senao{
+      desconto = 0
     }
     
+    //Exibindo dados
+    se (desconto > 0 ){
+      escreva("==== Exibindo Dados ====")
+    escreva("\nQuantidade de morango: ",morango)
+    escreva("\nQuantidade de ma√ß√£: ",maca )
+    escreva("\n10% de Desconto na compra acima de 8Kg ou R$25,00: ", desconto," reais")
+    escreva("\nValor pago R$: ", valorPago, " reais")
+    } senao{
+      escreva("==== Exibindo Dados ====")
+    escreva("\nQuantidade de morango: ",morango)
+    escreva("\nQuantidade de ma√ß√£: ",maca )
+    escreva("\nValor pago R$: ", valorPago, " reais")
+    }
     
-  
+
+    
  
-
-  
-
  
 
  
-
   }
 }
