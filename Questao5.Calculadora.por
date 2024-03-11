@@ -1,6 +1,6 @@
 programa {
   funcao inicio() {
-    //DeclaraÁ„o de vari·veis
+    //Declara√ß√£o de vari√°veis
     real soma, subtracao, multiplicacao, divisao, primeiroNumero, segundoNumero, resultado
     cadeia operador
 
@@ -10,7 +10,7 @@ programa {
     leia(primeiroNumero)
     escreva("\nDigite o segundo numero: ")
     leia(segundoNumero)
-    escreva("\nQual operaÁ„o deseja usar? [ + | - | * | / ]: ")
+    escreva("\nQual opera√ß√£o deseja usar? [ + | - | * | / ]: ")
     leia(operador)
 
     //Calculando Dados
@@ -32,14 +32,14 @@ programa {
       resultado = divisao
       pare
       caso contrario:
-      escreva("OperaÁ„o invalida! ")
+      escreva("Opera√ß√£o invalida! ")
 
     }
     limpa()
     //Exibindo dados
 
     escreva(" ==== Exibindo dados ==== ")
-    escreva("\nExibindo o Resultado da operaÁ„o :\n\t",primeiroNumero,"\t",operador,"\t",segundoNumero," = ", resultado)
+    escreva("\nExibindo o Resultado da opera√ß√£o :\n\t",primeiroNumero,"\t",operador,"\t",segundoNumero," = ", resultado)
 
 
 
