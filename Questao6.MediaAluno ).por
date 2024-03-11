@@ -1,6 +1,6 @@
 programa {
   funcao inicio() {
-    //Declarando vareáveis
+    //Declarando vareÃ¡veis
     real primeiraNota, segundaNota, media
     cadeia aluno
 
@@ -18,10 +18,10 @@ programa {
     media = (primeiraNota + segundaNota) / 2
 
     se (media > 6){
-      escreva("\nmedia: ",media,"\n Parabéns ", aluno, " Você está APROVADO !!")
+      escreva("\nmedia: ",media,"\n ParabÃ©ns ", aluno, " VocÃª estÃ¡ APROVADO !!")
     } 
     se (media < 6 e media >= 4){
-      escreva("\nmedia: ",media,"\n O aluno ", aluno, " está em RECUPERAÇÂO! ")
+      escreva("\nmedia: ",media,"\n O aluno ", aluno, " estÃ¡ em RECUPERAÃ‡Ã‚O! ")
     }
     se (media < 4){
       escreva("\nmedia: ",media,"\n O aluno ",aluno, " REPROVADO! ")
