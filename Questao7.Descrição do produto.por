@@ -1,6 +1,6 @@
 programa {
   funcao inicio() {
-  //Declarando Vari·veis
+  //Declarando Vari√°veis
   
   cadeia nome, porcentagem
   inteiro quantidadeAdquirida
@@ -8,11 +8,11 @@ programa {
 
   //Coletando dados
   escreva(" === Ler produto ===")
-  escreva("\nDigite a descriÁ„o do produto: ")
+  escreva("\nDigite a descri√ß√£o do produto: ")
   leia(nome)
   escreva("\nQual a quantidade a ser adquirida? ")
   leia(quantidadeAdquirida)
-  escreva("\nDigite o preÁo unit·rio: ")
+  escreva("\nDigite o pre√ßo unit√°rio: ")
   leia(preco)
 
 limpa()
