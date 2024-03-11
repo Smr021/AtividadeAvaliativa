@@ -1,6 +1,6 @@
 programa {
   funcao inicio() {
-    //Declaraçao de vareaveis
+    //DeclaraÃ§ao de vareaveis
     inteiro valorA, valorB, valorC
 
     //Coletando dados
@@ -16,10 +16,10 @@ programa {
     limpa()
     //Exibindo dados
     se (valorA + valorB > valorC){
-      escreva("A soma de A: ",valorA," + B: ",valorB," é maior que C: ",valorC)
+      escreva("A soma de A: ",valorA," + B: ",valorB," Ã© maior que C: ",valorC)
 
     } senao {
-      escreva("A soma de A: ",valorA," + B: ",valorB," é menor que C: ",valorC)
+      escreva("A soma de A: ",valorA," + B: ",valorB," Ã© menor que C: ",valorC)
     }
 
 
