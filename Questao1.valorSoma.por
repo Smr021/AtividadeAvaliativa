@@ -1,6 +1,6 @@
 programa {
   funcao inicio() {
-    //Declaraçao de vareaveis
+    //DeclaraÃ§ao de vareaveis
     inteiro valorA, valorB
     real valorC
     cadeia soma
@@ -31,7 +31,7 @@ se (valorA == valorB){
   soma = "Soma dos valores"
 } senao {
   valorC = valorA * valorB
-  soma = "Multiplicação dos valores"  
+  soma = "MultiplicaÃ§Ã£o dos valores"  
 }
 
     //Exibindo dados
