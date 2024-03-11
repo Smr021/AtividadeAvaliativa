@@ -1,6 +1,6 @@
 programa {
   funcao inicio() {
-    //DeclaraÁao de vare·veis
+    //Declara√ßao de vare√°veis
     real litrosVendidos, precoGasolina, precoAlcool, desconto, valorPago
     cadeia tipoCombustivel
 
@@ -66,7 +66,7 @@ programa {
       }
       pare
       caso contrario:
-      escreva("OpÁ„o invalida, Digite A ou G ")
+      escreva("Op√ß√£o invalida, Digite A ou G ")
 
 
     }
