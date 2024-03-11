@@ -1,4 +1,5 @@
 programa {
+  inclua biblioteca Matematica --> mat
   funcao inicio() {
     //Declaraçao de vareáveis
     real litrosVendidos, precoGasolina, precoAlcool, desconto, valorPago
@@ -23,11 +24,11 @@ programa {
       caso "A":
       se(litrosVendidos <= 25){
         desconto = precoAlcool * 0.02
-        valorPago = litrosVendidos * (precoAlcool - (precoAlcool * desconto))
+        valorPago = litrosVendidos * (precoAlcool - desconto)
 
       } senao{
         desconto = precoAlcool * 0.04
-        valorPago = litrosVendidos * (precoAlcool - (precoAlcool * desconto))
+        valorPago = litrosVendidos * (precoAlcool - desconto)
       }
       pare
 
@@ -35,34 +36,34 @@ programa {
       caso "a":
       se(litrosVendidos <= 25){
         desconto = precoAlcool * 0.02
-        valorPago = litrosVendidos * (precoAlcool - (precoAlcool * desconto))
+        valorPago = litrosVendidos * (precoAlcool - desconto)
 
       } senao{
         desconto = precoAlcool * 0.04
-        valorPago = litrosVendidos * (precoAlcool - (precoAlcool * desconto))
+        valorPago = litrosVendidos * (precoAlcool - desconto)
       }
       pare
 
 
-      caso tipoCombustivel == "G":
+      caso "G":
       se (litrosVendidos <= 25){
         desconto = precoGasolina * 0.03
-        valorPago = litrosVendidos * (precoGasolina - (precoGasolina * desconto))
+        valorPago = litrosVendidos * (precoGasolina - desconto)
 
       } senao{
         desconto = precoGasolina * 0.05
-        valorPago = litrosVendidos * (precoGasolina - (precoGasolina * desconto))
+        valorPago = litrosVendidos * (precoGasolina - desconto)
       }
       pare
 
       caso "g":
       se (litrosVendidos <= 25){
         desconto = precoGasolina * 0.03
-        valorPago = litrosVendidos * (precoGasolina - (precoGasolina * desconto))
+        valorPago = litrosVendidos * (precoGasolina - desconto)
 
       } senao{
         desconto = precoGasolina * 0.05
-        valorPago = litrosVendidos * (precoGasolina - (precoGasolina * desconto))
+        valorPago = litrosVendidos * (precoGasolina - desconto)
       }
       pare
       caso contrario:
@@ -70,7 +71,9 @@ programa {
 
 
     }
-    
+    //Arredondar valor
+    valorPago = mat.arredondar (valorPago, 2)
+
     limpa()
        
     //Exibindo Dados
