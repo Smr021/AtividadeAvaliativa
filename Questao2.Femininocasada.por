@@ -1,17 +1,17 @@
 programa {
   funcao inicio() {
-    //DeclaraÁao de vareaveis
+    //Declara√ßao de vareaveis
     cadeia nome, estadoCivil, tempoCasada, sexoBiologico
     caracter sexo
 
     //Coletando dados
-    escreva("\n ==== vamos l· =====")
+    escreva("\n ==== vamos l√° =====")
     escreva("\nQual o seu nome? ")
     leia(nome)
 
   limpa()
 
-    escreva("\nQual È o seu sexo? (Digite F para feminino ou M para Masculino) [F|M]")
+    escreva("\nQual √© o seu sexo? (Digite F para feminino ou M para Masculino) [F|M]")
     leia(sexo)
 
   limpa()
